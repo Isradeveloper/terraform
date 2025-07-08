@@ -6,6 +6,6 @@ variable "storage_account_name" {
   type = string
 }
 
-variable "suscription_id" {
+variable "subscription_id" {
   type = string
 }

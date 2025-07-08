@@ -10,7 +10,7 @@ terraform {
 
 provider "azurerm" {
   features {}
-  subscription_id = var.suscription_id
+  subscription_id = var.subscription_id
 }
 
 resource "azurerm_resource_group" "rg" {
@@ -24,7 +24,6 @@ resource "azurerm_storage_account" "storage_account" {
   location = azurerm_resource_group.rg.location
   account_tier = "Standard"
   account_replication_type = "GRS"
-  access_tier = "Standard"
   tags = {
     environment = "Development"
   }
